@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="MakerCheckerLogin.css">
+<title>Register Yourself</title>
+
+<script type="text/javascript">
+function validateradio()
+{
+	if((!document.getElementById('maker').checked) && (!document.getElementById('checker').checked))
+		{
+		
+		alert("Please Checked a radio Button");
+		return false;
+		}
+	
+	}
+
+</script>
+</head>
+<body>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+ <div id="formFooter"  style="background-color:#e3f2fd; color:#5fbae9">
+      <h1> Sign Up Form</h1>
+    </div>
+
+       <!-- Login Form -->
+    <form action="UserLoginContoller" method="post" onsubmit="return validateradio();">
+      <input type="text" id="login" class="fadeIn second" name="userid" placeholder="User Id" required>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" required>
+          <br>
+          <br>
+      <input type="radio" id="maker" value="maker" name="role">Maker
+      &nbsp;
+      &nbsp;
+      <input type="radio" id="checker" value="checker" name="role">Checker
+      <br>
+      <br>
+      
+      <input type="submit" class="fadeIn fourth" name ="button" value="Register">
+    </form>
+
+    <!-- Remind Passowrd -->
+   
+  </div>
+</div>
+
+</body>
+</html>
